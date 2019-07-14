@@ -5,9 +5,9 @@ eval my_gray='$FG[240]'
 # right prompt
 if type "virtualenv_prompt_info" > /dev/null
 then
-	RPROMPT='$(virtualenv_prompt_info)$my_gray%D %*%{$reset_color%}%'
+	RPROMPT='$(virtualenv_prompt_info)$my_gray%n@%m %D %*%{$reset_color%}%'
 else
-	RPROMPT='$my_gray%D %*%{$reset_color%}%'
+	RPROMPT='$my_gray%n@%m %D %*%{$reset_color%}%'
 fi
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg[red]%}"
